@@ -19,6 +19,7 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin: auto;
 }
 
 .title {
@@ -73,4 +74,39 @@ main {
 
 .roll-dice:active {
     box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 380px) {
+    .dice-container {
+        gap: 10px;
+    }
+
+    .die-face {
+        height: 40px;
+        width: 40px;
+    }
+
+    .die-num {
+        font-size: 1.5rem;
+    }
+
+    .roll-dice {
+        width: 120px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 280px) {
+    .dice-container {
+        gap: 5px;
+    }
+
+    .die-face {
+        height: 30px;
+        width: 30px;
+    }
+
+    .die-num {
+        font-size: 1.2rem;
+    }
 }
